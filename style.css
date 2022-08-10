@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;    
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 20%;
+    background-color: black;
+}
+
+#personagem{
+    position: relative;
+    top: 150px;
+}
+
+.animar{
+    animation: personagem 400ms infinite linear;
+}
+
+@keyframes personagem{ 
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#quadrado{
+    position: relative;
+    top: 100px;
+    left: 480px;
+    animation: quadrado 2s infinite linear;
+}
+
+@keyframes quadrado{
+    0%{left: 480px;}
+    100%{left: -250px;}
+}
+
+#titulo{
+    margin-top: 180px;
+    font-size: 60px;
+}
+
+#descricao{
+    margin-top: 10px;
+    font-size: 10px;
+}
